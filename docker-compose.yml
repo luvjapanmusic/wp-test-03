@@ -19,7 +19,6 @@ services:
       - "80:80"
     volumes:
       - ./wordpress:/var/www/html
-      - ./init-wordpress.sh:/docker-entrypoint-init.d/init-wordpress.sh:ro
     depends_on:
       - db
 
